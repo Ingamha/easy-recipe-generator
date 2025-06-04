@@ -4,47 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI recipe generator</title>
-    <link rel="stylesheet" href="scr/style.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <h1>AI recipe generator</h1>
-    </header>
-    <main>
-      <form action="">
-        <input
-          type="text"
-          placeholder="What would you like?"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        <h2>Pizza</h2>
-        <p>
-          flour
-          <br />
-          water
-          <br />
-          oil
-          <br />
-        </p>
-        <p>Mix the ingredients together</p>
-      </div>
-    </main>
-    <footer>
-      This project is coded by Inga Margrethe Havnelid,
-      <a href="https://github.com/Ingamha/easy-recipe-generator" target="_blank"
-        >is open sourced on GitHub</a
-      >
-      and
-      <a href="https://easy-recipy-generator.netlify.app/" target="_blank"
-        >is hosted on Netlify.</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI recipe generator</h1>
+      </header>
+      <main>
+        <form action="">
+          <input
+            type="text"
+            placeholder="What would you like to eat?"
+            autofocus
+            required
+            autocomplete="off"
+            class="recipe-prompt"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
 
-    <script src="scr/index.js"></script>
+        <div class="recipe">
+          <h2>Pizza</h2>
+          Ingredients: flour, salt, yeast
+          <br />
+          Instructions: Mix together the ingredients.
+        </div>
+      </main>
+      <footer>
+        This project is coded by Inga Margrethe Havnelid,
+        <a
+          href="https://github.com/Ingamha/easy-recipe-generator"
+          target="_blank"
+          >is open sourced on GitHub</a
+        >
+        and
+        <a href="https://easy-recipy-generator.netlify.app/" target="_blank"
+          >is hosted on Netlify.</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
