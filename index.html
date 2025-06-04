@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI recipe generator</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="container">
@@ -12,7 +13,7 @@
         <h1>AI recipe generator</h1>
       </header>
       <main>
-        <form action="">
+        <form id="recipe-form-generator">
           <input
             type="text"
             placeholder="What would you like to eat?"
@@ -24,12 +25,7 @@
           <input type="submit" class="submit-button" />
         </form>
 
-        <div class="recipe">
-          <h2>Pizza</h2>
-          Ingredients: flour, salt, yeast
-          <br />
-          Instructions: Mix together the ingredients.
-        </div>
+        <div class="recipe" id="recipe"></div>
       </main>
       <footer>
         This project is coded by Inga Margrethe Havnelid,
