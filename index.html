@@ -14,20 +14,23 @@
         <h1>AI recipe generator</h1>
       </header>
       <main>
-        <form id="recipe-form-generator">
-          <input
-            type="text"
-            placeholder="What would you like to eat?"
-            autofocus
-            required
-            autocomplete="off"
-            class="recipe-prompt"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
+        <div class="form-container">
+          <form id="recipe-form-generator">
+            <input
+              type="text"
+              placeholder="What would you like to eat?"
+              autofocus
+              required
+              autocomplete="off"
+              class="recipe-prompt"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Green salad, pizza, pancakes</div>
+        </div>
 
-        <div class="recipe" id="recipe"></div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <footer>
         This project is coded by Inga Margrethe Havnelid,

@@ -14,13 +14,23 @@ header {
 
 h1 {
   text-align: center;
+  font-size: 32px;
 }
 
-form {
+.form-container {
   padding: 30px;
   background-color: #fffcef;
   border-radius: 10px;
+}
+form {
   display: flex;
+}
+
+.hint {
+  margin-top: 5px;
+  line-height: 1.5;
+  opacity: 0.6;
+  font-size: 12px;
 }
 
 .recipe-prompt {
@@ -51,8 +61,28 @@ form {
   border-left: 3px solid #393939;
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   margin-top: 30px;
   text-align: center;
   font-size: 12px;
+  opacity: 0.6;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
